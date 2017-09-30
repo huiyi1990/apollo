@@ -114,7 +114,7 @@ double QuinticPolynomialCurve1d::param_length() const { return param_; }
 
 std::string QuinticPolynomialCurve1d::to_string() const {
   return apollo::common::util::StrCat(
-      apollo::common::util::PrintIter(coef_, "\t"), param_, "\n");
+      apollo::common::util::PrintIter(coef_, "\t"),'\t', param_, "\n");
 }
 
 }  // namespace planning

@@ -49,4 +49,16 @@ cc_library(
     ],
 )
 
+cc_test(
+    name = "polynomial_curve1d_test",
+    srcs = [
+        "polynomial_curve1d_test.cc",
+    ],
+    deps = [
+        ":quartic_polynomial_curve1d",
+        ":quintic_polynomial_curve1d",
+        "@gtest//:main",
+    ],
+)
+
 cpplint()
